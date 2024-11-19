@@ -3,8 +3,8 @@ const gallery = document.getElementById("gallery");
 // URLs for images (you can add more URLs here)
 const imageUrls = [
     "https://w0.peakpx.com/wallpaper/14/382/HD-wallpaper-ff-hip-hop-bundle-fire-essy-fire-essy-game-thumbnail.jpg",
-    "https://via.placeholder.com/180x350?text=Image+2",
-    "https://via.placeholder.com/180x350?text=Image+3",
+    "https://w0.peakpx.com/wallpaper/14/382/HD-wallpaper-ff-hip-hop-bundle-fire-essy-fire-essy-game-thumbnail.jpg",
+    "https://w0.peakpx.com/wallpaper/14/382/HD-wallpaper-ff-hip-hop-bundle-fire-essy-fire-essy-game-thumbnail.jpg",
     // Add as many image URLs as needed here
 ];
 
