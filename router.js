@@ -1,10 +1,10 @@
 // Check authentication status and handle routing
 function checkAuthRedirect() {
     const authenticated = localStorage.getItem("authenticated");
-
+    
     // Get the current page
     const currentPage = window.location.pathname.split("/").pop();
-
+    
     // If not authenticated and trying to access protected pages (excluding login or signup page)
     if (!authenticated && currentPage !== "login.html" && currentPage !== "signup.html") {
         // Redirect to login.html
@@ -20,9 +20,9 @@ function checkAuthRedirect() {
 
 // Clear browser history to disable back navigation after login/logout
 function clearHistory() {
-    history.pushState(null, null, window.location.href); // Add a dummy entry to the history stack
+    history.pushState(null, null, location.href); // Add a dummy entry to the history stack
     window.addEventListener("popstate", () => {
-        history.pushState(null, null, window.location.href); // Prevent back navigation
+        history.pushState(null, null, location.href); // Prevent back navigation
     });
 }
 

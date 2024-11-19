@@ -1,8 +1,8 @@
 const users = [
-    { username: "venkatesh", password: "password123" },
+    { username: "venkatesh", password: "123" },
 ];
 
-// Login functionality
+// On successful login, set the authentication state
 function login(event) {
     event.preventDefault();
     const username = document.getElementById("username").value;
@@ -16,13 +16,11 @@ function login(event) {
         localStorage.setItem("authenticated", true); // Mark user as authenticated
         alert("Login successful!");
         window.location.href = "index.html"; // Redirect to homepage
-
-        // Prevent going back to login page after login
-        history.pushState(null, null, location.href); // Push current URL to history stack
     } else {
         alert("Invalid username or password.");
     }
 }
+
 
 // Logout functionality
 function logout() {
