@@ -91,7 +91,7 @@ li:hover {
 }
 
 .card {
-    margin-top: 60px; /* Space for the fixed navbar */
+    margin-top: 10px; /* Space for the fixed navbar */
     display: inline-block; /* Width matches content */
 }
 
