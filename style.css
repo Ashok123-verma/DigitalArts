@@ -1,0 +1,141 @@
+main {
+    margin-top: 60px; /* Space for the fixed navbar */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px; /* Spacing between cards */
+}
+
+.card {
+    display: inline-block; /* Width matches content */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickability */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    box-shadow: 0 4px 8px rgba(233, 230, 230, 0.5); /* Shadow for depth */
+}
+
+/* Lightbox container */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Sits on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(233, 230, 230, 0.5); /* Shadow for depth */
+}
+
+/* Lightbox image */
+.lightbox-content {
+    max-width: 80%; /* Adjust size as needed */
+    max-height: 80%; /* Adjust size as needed */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Consistent sizing */
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    background-color: #141618;
+    top: 0; /* Sticks the navbar to the top */
+    z-index: 10; /* Ensures the navbar stays on top */
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 15px;
+    color: yellow;
+}
+
+body {
+    background-color: #222831;
+}
+
+li:hover {
+    background-color: gray;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.SignOutbtn {
+    margin: auto;
+    margin-right: 0;
+}
+
+.card {
+    margin-top: 60px; /* Space for the fixed navbar */
+    display: inline-block; /* Width matches content */
+}
+
+.card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickability */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    box-shadow: 0 4px 8px rgba(233, 230, 230, 0.5); /* Shadow for depth */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Lightbox container */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Sits on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox image */
+.lightbox-content {
+    max-width: 80%; /* Adjust size as needed */
+    max-height: 80%; /* Adjust size as needed */
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
