@@ -5,14 +5,14 @@ function checkAuthRedirect() {
     // Get the current page
     const currentPage = window.location.pathname.split("/").pop();
     
-    // If not authenticated and trying to access protected pages (excluding login or signup page)
-    if (!authenticated && currentPage !== "login.html" && currentPage !== "signup.html") {
+    // If not authenticated and trying to access protected pages (except login page)
+    if (!authenticated && currentPage !== "login.html") {
         // Redirect to login.html
         window.location.href = "login.html";
     }
 
-    // If authenticated and trying to access login or signup page
-    if (authenticated && (currentPage === "login.html" || currentPage === "signup.html")) {
+    // If authenticated and trying to access login page
+    if (authenticated && currentPage === "login.html") {
         // Redirect to index.html
         window.location.href = "index.html";
     }
