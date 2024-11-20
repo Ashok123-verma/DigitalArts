@@ -1,9 +1,8 @@
 main {
     margin-top: 60px; /* Space for the fixed navbar */
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px; /* Spacing between cards */
 }
 
 .card {
@@ -39,8 +38,8 @@ main {
 
 /* Lightbox image */
 .lightbox-content {
-    max-width: 80%; /* Adjust size as needed */
-    max-height: 80%; /* Adjust size as needed */
+    max-width: 100%; /* Adjust size as needed */
+    height: 100%; /* Adjust size as needed */
     box-shadow: 0 6px 20px rgba(233, 230, 230, 0.8);
 
 }
@@ -48,8 +47,8 @@ main {
 /* Close button */
 .close {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 0px;
+    right: 510px;
     color: #0c0c0c;
     font-size: 40px;
     cursor: pointer;
@@ -91,7 +90,6 @@ li:hover {
 }
 
 .card {
-    margin-top: 30px; /* Space for the fixed navbar */
     display: inline-block; /* Width matches content */
 }
 
