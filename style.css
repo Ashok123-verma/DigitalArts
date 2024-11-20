@@ -39,7 +39,7 @@ main {
 /* Lightbox image */
 .lightbox-content {
     max-width: 95%; /* Adjust size as needed */
-    height: 100%; /* Adjust size as needed */
+    height: 97%; /* Adjust size as needed */
     box-shadow: 0 6px 20px rgba(233, 230, 230, 0.8);
 
 }
