@@ -53,5 +53,5 @@ if (window.location.pathname === '/index.html') {
     history.pushState(null, null, location.href); // Push index page URL into history stack
 }
 
-// Generate 20 cards
-createCards(20);
+// Generate 100 cards
+createCards(100);
