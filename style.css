@@ -50,7 +50,7 @@ main {
     position: absolute;
     top: 20px;
     right: 40px;
-    color: #fff;
+    color: #0c0c0c;
     font-size: 40px;
     cursor: pointer;
 }
@@ -65,21 +65,19 @@ ul {
     list-style-type: none;
     position: fixed;
     width: 100%;
-    background-color: #141618;
     top: 0; /* Sticks the navbar to the top */
     z-index: 10; /* Ensures the navbar stays on top */
+    box-shadow: 5px 4px 10px black;
 }
 
 li a {
     display: block;
     text-decoration: none;
-    padding: 12px 15px;
-    color: yellow;
+    padding: 22px 25px;
+    color: black;
+   
 }
 
-body {
-    background-color: #222831;
-}
 
 li:hover {
     background-color: gray;
